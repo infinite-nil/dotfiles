@@ -4,6 +4,7 @@ if [ "$1" == "--prepare" ]; then
 	echo "Installing dependencies"
 
 	sudo apt install git vim curl zsh -qq
+	sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
 	echo "Setup"
 
